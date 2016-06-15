@@ -34,4 +34,4 @@ For fresh udev it could be required to unset `CONFIG_FW_LOADER_USER_HELPER` kern
 
 ```
 sed 's/^CONFIG_FW_LOADER_USER_HELPER/#\0/' -i path_to_config_file
-``
+```
