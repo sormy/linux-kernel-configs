@@ -29,3 +29,9 @@ For Amazon Enhanced Networking (10Gbps) you need additionally to enable:
 ```
 CONFIG_IXGBEVF=y
 ```
+
+For fresh udev it could be required to unset `CONFIG_FW_LOADER_USER_HELPER` kernel option which is set by default.
+
+```
+sed 's/^CONFIG_FW_LOADER_USER_HELPER/#\0/' -i path_to_config_file
+``
